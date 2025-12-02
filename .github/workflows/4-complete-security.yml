@@ -71,7 +71,7 @@ jobs:
       - name: Run OWASP Dependency-Check (SCA)
         uses: dependency-check/Dependency-Check_Action@main
         with:
-          project: 'calculator-app'
+          project: 'app'
           path: '.'
           format: 'ALL'
           out: 'reports'
@@ -205,3 +205,5 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "📁 Check the **Actions** tab for detailed reports" >> $GITHUB_STEP_SUMMARY
           echo "🔍 Check the **Security** tab for vulnerability details" >> $GITHUB_STEP_SUMMARY
+
+
