@@ -72,7 +72,7 @@ jobs:
         uses: dependency-check/Dependency-Check_Action@main
         with:
           project: 'app'
-          path: '.'
+          path: ${{ steps.python_path.outputs.packages }}
           format: 'ALL'
           out: 'reports'
           args: >

@@ -39,7 +39,7 @@ jobs:
         id: depcheck
         with:
           project: 'app'
-          path: '.'
+          path: ${{ steps.python_path.outputs.packages }}
           format: 'ALL'  # Generate HTML, JSON, CSV, XML
           out: 'reports'
           args: >
