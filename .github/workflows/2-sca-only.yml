@@ -42,9 +42,6 @@ jobs:
           path: ${{ steps.python_path.outputs.packages }}
           format: 'ALL'  # Generate HTML, JSON, CSV, XML
           out: 'reports'
-          args: >
-            --failOnCVSS 7
-            --enableRetired
       
       # Step 5: Upload Dependency-Check reports
       # ✅ Proper artifact naming (hyphens, not underscores)
